@@ -1,7 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## makeCacheMatrix
+##this function set the value of the vector,get the value of the vector,set the value of the matrix and get the value of the matrix 
 
 makeCacheMatrix <- function(x = matrix()) {
   m<-NULL
@@ -10,7 +10,7 @@ makeCacheMatrix <- function(x = matrix()) {
     m<-NULL
   }
   get <- function() x
-  setmatrix <- function(solve) m<<-solve
+  setmatrix <- function(Solve) m<<-Solve
   getmatrix <- function() m
   list(set = set, get = get,
        setmatrix = setmatrix,
@@ -18,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Inverse of matrix
+## this function calculates the inverse of the matrix but first checks if it already exists
 
 cacheSolve <- function(x, ...) {
         m<-x$getmatrix()
